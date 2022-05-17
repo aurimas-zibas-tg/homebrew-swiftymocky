@@ -6,6 +6,7 @@ class Swiftymocky < Formula
   license "MIT"
 
   depends_on xcode: "13.0"
+  depends_on sourcery: "1.6.0"
 
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"
